@@ -22,6 +22,5 @@ python Main.py
 https://polybox.ethz.ch/index.php/s/LktxpBVaB7x2YQn
 
 # Results
-![Exp-3](https://user-images.githubusercontent.com/39007209/203033160-cfdaa292-06c0-4809-b5f0-b46839b30967.jpg)
-![tsne](https://user-images.githubusercontent.com/39007209/203033293-3fc2a2c5-1550-44de-b036-a600cb4b9d8a.gif)
+![image(1)](https://user-images.githubusercontent.com/39007209/203045516-2f489acc-2754-492a-a000-cb0642b69c5c.jpg)
 
