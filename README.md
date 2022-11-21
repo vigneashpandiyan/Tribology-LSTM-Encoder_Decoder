@@ -9,8 +9,18 @@ Wear mechanisms are still inevitable and occur progressively in self-lubricating
 
 ![Abstract](https://user-images.githubusercontent.com/39007209/203031017-39627b02-275c-4f94-9c4e-996eda3fcd0d.jpg)
 # Experimental setup
-
 ![Exp-1](https://user-images.githubusercontent.com/39007209/203033138-c1ea2f72-3b54-4716-a8a0-8c63c84f3445.jpg)
+
+# Code
+```bash
+git clone https://github.com/vigneashpandiyan/Tribology-LSTM-Encoder_Decoder
+cd Tribology-LSTM-Encoder_Decoder
+python Main.py
+
+```
+#Data
+https://polybox.ethz.ch/index.php/s/LktxpBVaB7x2YQn
+
 # Results
 ![Exp-3](https://user-images.githubusercontent.com/39007209/203033160-cfdaa292-06c0-4809-b5f0-b46839b30967.jpg)
 ![tsne](https://user-images.githubusercontent.com/39007209/203033293-3fc2a2c5-1550-44de-b036-a600cb4b9d8a.gif)
