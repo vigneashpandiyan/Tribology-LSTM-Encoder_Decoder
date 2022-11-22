@@ -33,13 +33,14 @@ from matplotlib import cm
 from Utils import *
 from tSNE import *
 from Network import *
+from Visualization_Utils import *
 
 rcParams['figure.figsize'] = 12, 8
 RANDOM_SEED = 42
 np.random.seed(RANDOM_SEED)
 torch.manual_seed(RANDOM_SEED)
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu") #Setting Up CUDA
-Epochs=150
+Epochs=2
 
 #%% Data Preparation
 
@@ -47,10 +48,7 @@ Epochs=150
 The script is hard coded based on ground-truths...
 - The ground truths [windows] are running-in, normal and anomaly
 '''
-'''
-https://polybox.ethz.ch/index.php/s/LktxpBVaB7x2YQn
-Data source-->
-'''
+
 Force = np.load('Force.npy') #Data source
 #Setting up a dataframe
 
@@ -210,3 +208,15 @@ np.save('Embedding_labels.npy',Tsne_labels)
 
 
 #%%
+
+PATH = 'model.pth'
+
+model_train = torch.load(PATH)
+model.eval()
+
+#%%
+
+reconstruction_loss(model, str('Force.npy'))
+reconstruction_loss_scatter(model, str('Force.npy'),THRESHOLD,8000,18000)
+
+
